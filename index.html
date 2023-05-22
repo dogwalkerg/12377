@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-staus-bar-style" content="black">
+	<title>网络举报</title>
+	<style type="text/css">
+		body{
+			font-family: Arial , 'Microsoft';
+		}
+		.content{
+			padding: 0 30px;
+		}
+		.content img{
+			display: block;
+			margin: 0 auto;
+			margin-top: 20%;
+			border: none;
+		}
+		.content h3{
+			font-size: 24px;
+			text-align: center;
+			width: 100%;
+		}
+		.content p{
+			font-size: 22px;
+			margin: 0 auto;
+			text-align：justify ;
+			line-height: 1.2em;
+		}
+		@media screen and (max-width:361px){
+			.content img{
+				width: 50%;
+			}
+			.content h3{
+				font-size: 22px;
+			}
+			.content p{
+				font-size: 18px;
+			}
+		}
+	</style>
+</head>
+ <body>
+ <script language="JavaScript">
+	var ua = navigator.userAgent.toLowerCase();
+	var html='<div class="content"><img src="style/logo.png"><h3>温馨提示<br></h3><p>请点击右上角按钮，在弹出的菜单中点击“在浏览器中打开”，即可安装。<br></p></div>';
+	/*
+	if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+		if(ua.match(/MicroMessenger/i)=="micromessenger"){
+			document.write(html);
+		}else{
+			window.location="https://apps.apple.com/cn/app/id1508501383";
+		}	
+	}else if (/(Android)/i.test(navigator.userAgent)) {
+		if(ua.match(/MicroMessenger/i)=="micromessenger"){
+			document.write(html);
+		}else{
+			window.location="http://new.12377.cn/app/app-release.apk";
+		}
+	} else {
+		window.location="http://new.12377.cn";
+	};
+	*/
+	if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+		if(ua.match(/MicroMessenger/i)=="micromessenger"){
+			document.write(html);
+		}else{
+			window.location="https://apps.apple.com/cn/app/id1508501383";
+		}	
+	}else {
+		if(ua.match(/MicroMessenger/i)=="micromessenger"){
+			document.write(html);
+		}else{
+			window.location="https://www.12377.cn/app/app-release.apk";
+		}
+	};
+ </script>
+ </body>
+</head></html>
